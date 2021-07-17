@@ -1,0 +1,142 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="apphome.master.cs" Inherits="apphome" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head  id="head1" runat="server">
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+
+    <link rel="stylesheet" href="camille/camille/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="camille/camille/css/animate.css">
+    
+    <link rel="stylesheet" href="camille/camille/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="camille/camille/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="camille/camille/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="camille/camille/css/aos.css">
+
+    <link rel="stylesheet" href="camille/camille/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="camille/camille/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="camille/camille/css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="camille/camille/css/flaticon.css">
+    <link rel="stylesheet" href="camille/camille/css/icomoon.css">
+    <link rel="stylesheet" href="camille/camille/css/style.css">
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+        	  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        	    <div class="container">
+        	      <a class="navbar-brand" href="index.html">Camille</a>
+        	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        	        <span class="oi oi-menu"></span> Menu
+        	      </button>
+        
+        	      <div class="collapse navbar-collapse" id="ftco-nav">
+        	        <ul class="navbar-nav ml-auto">
+        	        	<li class="nav-item  active"><a href="Appointment.aspx" class="nav-link">HOME</a></li>
+        	        	<li class="nav-item"><a href="Services.aspx" class="nav-link">SERVICE</a></li>
+        	        	<li class="nav-item"><a href="About.aspx" class="nav-link">ABOUT </a></li>
+        	        	<li class="nav-item "><a href="Contactview.aspx" class="nav-link">CONTACT</a></li>
+        	        	<li class="nav-item"><a href="Admin.aspx" class="nav-link">ADMIN</a></li>
+        	         </ul>
+        	      </div>
+        	    </div>
+        	  </nav>
+            <!-- END nav -->
+     
+        
+        
+            
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+
+
+            <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2 logo">Camille</h2>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="Appointment.aspx" class="py-2 d-block">Home</a></li>
+                <li><a href="About.aspx" class="py-2 d-block">About</a></li>
+                <li><a href="Services.aspx" class="py-2 d-block">Services</a></li>
+                <li><a href="Contactview.aspx" class="py-2 d-block">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text"><asp:Label ID="lblAddress" runat="server" Text="Label"></asp:Label></span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">
+                    <asp:Label ID="lblphno" runat="server" Text="Label"></asp:Label></span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">
+                <asp:Label ID="lblemail" runat="server" Text="Label"></asp:Label></span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    
+          <!-- loader -->
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"></div>
+        
+                  
+          <script src="camille/camille/js/jquery.min.js"></script>
+          <script src="camille/camille/js/jquery-migrate-3.0.1.min.js"></script>
+          <script src="camille/camille/js/popper.min.js"></script>
+          <script src="camille/camille/js/bootstrap.min.js"></script>
+          <script src="camille/camille/js/jquery.easing.1.3.js"></script>
+          <script src="camille/camille/js/jquery.waypoints.min.js"></script>
+          <script src="camille/camille/js/jquery.stellar.min.js"></script>
+          <script src="camille/camille/js/owl.carousel.min.js"></script>
+          <script src="camille/camille/js/jquery.magnific-popup.min.js"></script>
+          <script src="camille/camille/js/aos.js"></script>
+          <script src="camille/camille/js/jquery.animateNumber.min.js"></script>
+          <script src="camille/camille/js/bootstrap-datepicker.js"></script>
+          <script src="camille/camille/js/jquery.timepicker.min.js"></script>
+          <script src="camille/camille/js/scrollax.min.js"></script>
+           <script src="camille/camille/js/google-map.js"></script>
+          <script src="camille/camille/js/main.js"></script>
+            
+        
+        
+        
+        
+    
+    </form>
+</body>
+</html>
